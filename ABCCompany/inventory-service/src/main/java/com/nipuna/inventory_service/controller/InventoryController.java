@@ -32,11 +32,13 @@ public class InventoryController {
         return inventoryService.saveItem(inventoryDTO);
     }
 
+    // update item
     @PutMapping("/updateitem")
     public InventoryDTO updateItem(@RequestBody InventoryDTO inventoryDTO) {
         return inventoryService.updateItem(inventoryDTO);
     }
 
+    //delete item
     @DeleteMapping("/deleteitem/{itemId}")
     public String deleteItem(@PathVariable Integer itemId) {
         return inventoryService.deleteItem(itemId);
