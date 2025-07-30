@@ -55,5 +55,11 @@
             <artifactId>inventory-service</artifactId>
             <version>${project.parent.version}</version>
         </dependency>
+
+        <dependency>
+            <groupId>com.nipuna</groupId>
+            <artifactId>product-service</artifactId>
+            <version>${project.parent.version}</version>
+        </dependency>
     </dependencies>
 </project>

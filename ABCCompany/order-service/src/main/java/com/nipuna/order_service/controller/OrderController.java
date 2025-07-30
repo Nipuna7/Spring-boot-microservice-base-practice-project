@@ -1,5 +1,6 @@
 package com.nipuna.order_service.controller;
 
+import com.nipuna.order_service.common.OrderResponse;
 import com.nipuna.order_service.dto.OrderDTO;
 import com.nipuna.order_service.service.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,7 +30,7 @@ public class OrderController {
 
     // add order
     @PostMapping("/addorder")
-    public OrderDTO saveOrder(@RequestBody OrderDTO orderDTO) {
+    public OrderResponse saveOrder(@RequestBody OrderDTO orderDTO) {
         return orderService.saveOrder(orderDTO);
     }
 
